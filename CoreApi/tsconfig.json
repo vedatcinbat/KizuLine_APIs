@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                         // Good target for modern JavaScript
+    "module": "CommonJS",                       // CommonJS for better compatibility with Node.js
+    "outDir": "./dist",                         // Output directory for compiled JavaScript files
+    "rootDir": "./src",                         // Source root directory for TypeScript files
+    "strict": true,                             // Enable all strict type checking options
+    "esModuleInterop": true,                    // Enable interoperability between CommonJS and ES Modules
+    "skipLibCheck": true,                       // Skip type checking of declaration files for performance
+    "forceConsistentCasingInFileNames": true,   // Enforce consistent file casing across your project
+    "experimentalDecorators": true,             // Required for using decorators (like in TypeORM)
+    "emitDecoratorMetadata": true               // Required for TypeORM to generate metadata for decorators
+  },
+  "include": ["src/**/*.ts"],                   // Include all TypeScript files under the src folder
+  "exclude": ["node_modules"]                   // Exclude the node_modules folder
+}
